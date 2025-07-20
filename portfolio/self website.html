@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dhruv's Project Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e2f;
+      color: #e0e0e0;
+    }
+    header {
+      background: linear-gradient(135deg, #7f00ff, #e100ff);
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.5em;
+    }
+    nav {
+      text-align: center;
+      background: #2b2b40;
+      padding: 15px 0;
+    }
+    nav button {
+      background: transparent;
+      color: #e0e0e0;
+      padding: 12px 25px;
+      margin: 0 10px;
+      border: 2px solid #e100ff;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    nav button:hover {
+      background: #e100ff;
+      color: #fff;
+    }
+    section {
+      display: none;
+      padding: 40px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section.active {
+      display: block;
+    }
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .about-img {
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .project {
+      background: #2f2f46;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .project h2 {
+      color: #ffcc70;
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #00f5d4;
+      text-decoration: none;
+    }
+    .contact {
+      margin-top: 30px;
+    }
+    .socials a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 15px;
+      border: 2px solid #00f5d4;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #00f5d4;
+      transition: background 0.3s, color 0.3s;
+    }
+    .socials a:hover {
+      background: #00f5d4;
+      color: #1e1e2f;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #1a1a2e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dhruv's Dev Space </h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('home')">About Me</button>
+    <button onclick="showSection('projects')">Projects</button>
+  </nav>
+
+  <section id="home" class="active">
+    <div class="about-container">
+      <img src="C:\Users\dhruv\OneDrive\Desktop\WhatsApp Image 2025-07-20 at 20.53.48_953c271d.jpg" alt="Dhruv Joshi" class="about-img">
+      <div class="about-text">
+        <h2>Welcome, I'm Dhruv Joshi</h2>
+        <p>Hello, I'm Dhruv Joshi — a passionate and dedicated individual driven by the pursuit of excellence. From becoming a district-level hockey player to leading tech projects, I thrive on teamwork, innovation, and creativity.</p>
+        <p>In technology and web design, I’ve developed robust skills in full-stack development and creative web architecture. I’ve also represented France at the G20 Summit in CENMUN 2022, where I emerged as a winner — an experience that fueled my passion for diplomacy and global impact.</p>
+        <p>I love combining leadership, creativity, and tech skills to build meaningful solutions. Whether it’s building AI tools, designing elegant user interfaces, or engaging in national quizzes, I bring energy and commitment to everything I do.</p>
+        <div class="contact">
+          <h3>Connect with me:</h3>
+          <div class="socials">
+            <a href="https://github.com/dhruvjoshi0905" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/dhruv-joshi09" target="_blank">LinkedIn</a>
+            <a href="mailto:dhruvjoshi0905@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="project">
+      <h2>🎨 Air Canvas with Fist Erase</h2>
+      <p>A touchless drawing app using hand gestures and OpenCV. Draw with your index finger and clear the screen with a fist.</p>
+      <a href="https://github.com/dhruvjoshi0905/Air-canva" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>📸 Face Recognition</h2>
+      <p>Uses face embeddings to recognize and match human faces. Built using OpenCV and face_recognition library in Python.</p>
+      <a href="https://github.com/dhruvjoshi0905/ml/blob/main/Face_recognition.ipynb" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>📊 Predictive Modeling and Clustering</h2>
+      <p>Combines regression and unsupervised learning techniques to extract insights from environmental data using scikit-learn.</p>
+      <a href="https://github.com/dhruvjoshi0905/ml/blob/main/Predictive%20Modeling%20and%20Clustering%20of%20Environmental%20Factors.ipynb" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>🔋 Renewable Energy Sources Analysis</h2>
+      <p>Analyzes trends and usage of renewable energy sources and provides insights using Python and Pandas.</p>
+      <a href="https://github.com/dhruvjoshi0905/ml/blob/main/Renewable%20Energy%20Sources%20and%20Consumption%20Analysis.ipynb" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>📩 SPAM SMS Detection</h2>
+      <p>Machine learning-based classification model that detects spam SMS messages using natural language processing.</p>
+      <a href="https://github.com/dhruvjoshi0905/ml/blob/main/SPAM_SMS.ipynb" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>📈 AI Integrated Marketing</h2>
+      <p>Analyzes customer segmentation and marketing strategy using AI models to optimize campaigns and outreach.</p>
+      <a href="https://github.com/dhruvjoshi0905/ml/blob/main/ai_integrated_marketing.ipynb" target="_blank">🔗 View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>♻️ Waste Management using AI</h2>
+      <p>Applies machine learning techniques to classify and optimize waste management processes and efficiency.</p>
+      <a href="https://github.com/dhruvjoshi0905/ml/blob/main/waste_management.ipynb" target="_blank">🔗 View on GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Dhruv Joshi.</p>
+  </footer>
+<script>
+    function showSection(sectionId) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+</body>
+</html>
